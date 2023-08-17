@@ -29,6 +29,9 @@
   "devDependencies": {
     "react-scripts": "4.0.3"
   },
+  "overrides": {
+    "typescript": "^5.0.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
