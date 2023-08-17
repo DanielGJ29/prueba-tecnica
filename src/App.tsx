@@ -67,7 +67,7 @@ function App() {
   const dispatch = useAppDispatch();
   const [open, setOpen] = useState<boolean>(false);
   const [open2, setOpen2] = useState<boolean>(false);
-  const [exampleImg, setExampleImg] = useState<string>("");
+  //const [exampleImg, setExampleImg] = useState<string>("");
   const {
     register,
     handleSubmit,
@@ -96,18 +96,8 @@ function App() {
     setValue("image", singleProduct[0]?.image);
   }, [setValue, singleProduct]);
 
-  useEffect(() => {
-    const fetchImg = async () => {
-      const response = await fetch("https://fakestoreapi.com/products/1");
-      const result = await response.json();
-      setExampleImg(result.image);
-    };
-
-    fetchImg();
-  }, []);
-
   //Functions
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+  const onSubmit: SubmitHandler<Inputs> = async (data: any) => {
     const result = await uploadFile(data.image);
 
     if (!result) {
@@ -135,7 +125,7 @@ function App() {
     handleClose();
   };
 
-  const onSubmitUpdate: SubmitHandler<Inputs> = async (data) => {
+  const onSubmitUpdate: SubmitHandler<Inputs> = async (data: any) => {
     const result = await uploadFile(data.image);
 
     if (!result) {

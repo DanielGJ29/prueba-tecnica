@@ -7,18 +7,18 @@ import { IconButton } from "@mui/material";
 //Styles
 import "./FormFile.css";
 
-type propsFormFile = {
-  label: string;
-  inputName: string;
-  isSubmitSuccessful: any;
-  register: Function;
-  watch: {};
-  errors?: { [key: string]: object };
-  reset?: any;
-  clearErrors?: any;
-  avatar?: any;
-  unregister?: any;
-};
+// type propsFormFile = {
+//   label: string;
+//   inputName: string;
+//   isSubmitSuccessful: any;
+//   register: Function;
+//   watch: {};
+//   errors?: { [key: string]: object };
+//   reset?: any;
+//   clearErrors?: any;
+//   avatar?: any;
+//   unregister?: any;
+// };
 
 const FormFile = ({
   label,
