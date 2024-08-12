@@ -25,19 +25,14 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyABtZXH3L1nLak5RSQeS0yVMnM_sONCMV4",
-  authDomain: "pruebaancona.firebaseapp.com",
-  projectId: "pruebaancona",
-  storageBucket: "pruebaancona.appspot.com",
-  messagingSenderId: "681238901699",
-  appId: "1:681238901699:web:c99fea5c2ecb29990e8376",
 
-  // apiKey: env.API_KEY,
-  // authDomain: env.AUTH_DOMAIN,
-  // projectId: env.PROJECT_ID,
-  // storageBucket: env.STORAGE_BUCKET,
-  // messagingSenderId: env.MESSAGING_SENDER_ID,
-  // appId: env.APP_ID,
+
+   apiKey: env.API_KEY,
+  authDomain: env.AUTH_DOMAIN,
+   projectId: env.PROJECT_ID,
+   storageBucket: env.STORAGE_BUCKET,
+   messagingSenderId: env.MESSAGING_SENDER_ID,
+   appId: env.APP_ID,
 };
 
 // Initialize Firebase
